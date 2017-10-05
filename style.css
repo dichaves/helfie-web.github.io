@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
@@ -11,7 +15,7 @@ ul {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  padding-right: 7em;
+  padding-right: 5em;
   font-weight: 400;
   font-size: 1.2em;
 }
@@ -26,6 +30,8 @@ a:link, a:visited {
 }
 
 #header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,15 +39,53 @@ a:link, a:visited {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 6em;
-  background-color: rgba(255, 255, 255, 0.5);
+  /*height: 10em;*/
+  height: 15%;
+  background-color: rgba(255, 255, 255, 1);
   /*padding: 0 2em;*/
+  box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.46);
 }
 
-.section {
+.section-one {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-two {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-three {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #FF728F;
+  width: 100vw;
+  height: 100vh;
+}
+
+.steps {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family:'Open Sans', sans-serif;
+  font-weight:600;
+  color: white;
+  width: 100%;
+  padding: 0 5em;
+}
+
+.app-store {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 15%;
+  /*padding-bottom: 2em;*/
 }
 
 .description {
