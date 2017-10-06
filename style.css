@@ -69,13 +69,16 @@ a:link, a:visited {
   display: none;
 }
 
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
 .section-one {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-color: white;
-  width: 100vw;
-  height: 100vh;
 }
 
 #section1-iphone {
@@ -104,13 +107,97 @@ a:link, a:visited {
 }
 
 .section-two {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   background-color: white;
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
+  padding: 0 8em;
+}
+
+.section2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 80%;
+  width: 30vw;
+}
+
+.who-title {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.who-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  color: #58595B;
+  padding: 1.5em 0;
+}
+
+.who-insta {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  color: #00E086;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.social-media-icon {
+  width: 1.9em;
+  height: auto;
+}
+
+.section2-insta {
+  padding-left: 1em;
+}
+
+.section2-photogrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80%;
+  width: 45vw;
+}
+
+.photogrid-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.photo-container {
+  background-color: #FF93A9;
+  /*height: 32vh;
+  width: 25vh;*/
+  margin: 0.7em;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.photo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-container span {
+  width: 100%;
+  font-size: 0.9em;
 }
 
 .black-line {
+  /*position: absolute;*/
   background-color: black;
   width: 100vw;
   height: 0.4em;
@@ -119,11 +206,9 @@ a:link, a:visited {
 .section-three {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   background-color: #FF728F;
-  width: 100vw;
-  height: 100vh;
 }
 
 .steps {
@@ -147,8 +232,43 @@ a:link, a:visited {
 
 .description {
   text-align: center;
+  width: 15vw;
 }
 
+.step {
+  background-color: white;
+  border-radius: 7.5vw;
+  width: 15vw;
+  height: 15vw;
+}
+
+.step-image {
+  width: 60%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #964354;
+  color: white;
+  width: 100vw;
+  height: 20vh;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 2em;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  padding-right: 4em;
+}
 
 @media (max-width: 450px) {
   .logo-header {
@@ -203,8 +323,16 @@ a:link, a:visited {
     position: absolute;
     height: 2em;
     width: 2em;
-    background-color: red;
+    background-color: #B3B3B3;
     cursor: pointer;
+  }
+
+  .arrow img {
+    width: 70%;
+    height: auto;
+    top: 30%;
+    left: 20%;
+    position: absolute;
   }
 
   #up-arrow {
@@ -244,5 +372,66 @@ a:link, a:visited {
   .subheader {
     font-size: 0.8em;
     margin-top: 1em;
+  }
+
+  .section-two {
+    height: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2em;
+  }
+
+  .section2-text {
+    width: 100%;
+    padding-top: 7em;
+  }
+
+  .who-title {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .who-description {
+    font-size: 0.8em;
+    padding: 1em 0;
+  }
+
+  .who-insta {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .social-media-icon {
+  }
+
+  .section2-insta {
+    padding-left: 0;
+  }
+
+  .section-three {
+    height: inherit;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
+    color: white;
+    width: 100%;
+    padding: 0 5em;
+  }
+
+  .description {
+    text-align: center;
+    width: 60vw;
+    padding: 1.5em 0;
+  }
+
+  .step-image {
+    width: 100%;
   }
 }
