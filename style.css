@@ -10,6 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.logo-section {
+  display: none;
+}
+
 .header-anchor-list {
   display: flex;
   list-style-type: none;
@@ -82,8 +86,21 @@ a:link, a:visited {
 
 #section1-text {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 10em;
+  width: 40vw;
+}
+
+.headline {
+  font-size: 3em;
+}
+
+.subheader {
+  font-size: 1.5em;
+  color: #FF728F;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .section-two {
@@ -91,6 +108,12 @@ a:link, a:visited {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.black-line {
+  background-color: black;
+  width: 100vw;
+  height: 0.4em;
 }
 
 .section-three {
@@ -127,9 +150,20 @@ a:link, a:visited {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .logo-header {
     display: none;
+  }
+
+  .logo-section {
+    display: block;
+    padding: 9em 0 2.5em 0;
+    width: 40vw;
+    height: auto;
+  }
+
+  .header {
+    font-weight: 600;
   }
 
   .header-content {
@@ -149,6 +183,7 @@ a:link, a:visited {
 
   .header-section-anchor.active {
     display: block;
+    font-weight: 700;
   }
 
   .arrows-container {
@@ -193,11 +228,21 @@ a:link, a:visited {
     order: 2;
     height: auto;
     width: 90%;
-    margin: 0;
+    margin: 2em 0 0 0;
   }
 
   #section1-text {
     order: 1;
     margin-bottom: 0;
+    width: 75vw;
+  }
+
+  .headline {
+    font-size: 1.5em;
+  }
+
+  .subheader {
+    font-size: 0.8em;
+    margin-top: 1em;
   }
 }
