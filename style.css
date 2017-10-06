@@ -89,7 +89,7 @@ a:link, a:visited {
 
 #section1-text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   margin-bottom: 10em;
   width: 40vw;
@@ -104,6 +104,7 @@ a:link, a:visited {
   color: #FF728F;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1em;
 }
 
 .section-two {
@@ -147,6 +148,10 @@ a:link, a:visited {
 }
 
 #who-insta-mobile {
+  display: none;
+}
+
+#app-store-mobile {
   display: none;
 }
 
@@ -215,6 +220,14 @@ a:link, a:visited {
   background-color: #FF728F;
 }
 
+.section3-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.2em;
+  font-weight: 400;
+  color: white;
+  padding-top: 1em;
+}
+
 .steps {
   display: flex;
   align-items: center;
@@ -230,7 +243,7 @@ a:link, a:visited {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 15%;
+  width: 45%;
   /*padding-bottom: 2em;*/
 }
 
@@ -244,10 +257,14 @@ a:link, a:visited {
   border-radius: 7.5vw;
   width: 15vw;
   height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .step-image {
   width: 60%;
+  height: auto;
 }
 
 .footer {
@@ -369,13 +386,14 @@ a:link, a:visited {
     order: 2;
     height: auto;
     width: 90%;
-    margin: 2em 0 0 0;
+    margin: 1.5em 0 0 0;
   }
 
   #section1-text {
     order: 1;
     margin-bottom: 0;
     width: 75vw;
+    align-items: center;
   }
 
   .headline {
@@ -392,12 +410,12 @@ a:link, a:visited {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 2em;
+    padding: 3em 2em;
   }
 
   .section2-text {
     width: 100%;
-    padding-top: 7em;
+    padding-top: 4em;
   }
 
   .who-title {
@@ -421,6 +439,14 @@ a:link, a:visited {
   }
 
   #who-insta-mobile {
+    display: flex;
+  }
+
+  #app-store-desktop {
+    display: none;
+  }
+
+  #app-store-mobile {
     display: flex;
   }
 
@@ -466,10 +492,21 @@ a:link, a:visited {
     text-align: center;
     width: 60vw;
     padding: 1.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .step-image {
-    width: 100%;
+  .step {
+    border-radius: 25vw;
+    width: 50vw;
+    height: 50vw;
+    margin-bottom: 1em;
+  }
+
+  .app-store {
+    width: 90%;
   }
 
   .footer {
