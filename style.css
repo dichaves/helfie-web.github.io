@@ -25,6 +25,11 @@ body {
   padding-left: 3em;
 }
 
+.header-section-anchor.active {
+  color: #FF728F;
+  /*font-weight: 700;*/
+}
+
 a:link, a:visited {
   text-decoration: none;
   color: inherit;
@@ -139,6 +144,11 @@ a:link, a:visited {
 
   .header-section-anchor {
     padding-left: 0;
+    display: none;
+  }
+
+  .header-section-anchor.active {
+    display: block;
   }
 
   .arrows-container {

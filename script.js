@@ -12,7 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var sectionIndex;
 
-  setSectionIndex(0);
+  $(window).on('activate.bs.scrollspy', function () {
+    var currentSectionIndex = sectionIds.findIndex((id) => "#" + id === arguments[1].relatedTarget);
+    setSectionIndex(currentSectionIndex);
+  })
+
+  Array.prototype.forEach.call(sectionAnchors, function (anchor) {
+    anchor.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      scrollTo(event.target.hash.substring(1))
+    })
+  })
 
   upArrow.addEventListener("click", function () {
     setSectionIndex(Math.max(0, sectionIndex - 1));
@@ -24,16 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTo(sectionIds[sectionIndex]);
   });
 
-  function showCurrentSectionInHeader() {
-    for (var i = 0; i < sectionAnchors.length; i++) {
-      if (i === sectionIndex) {
-        sectionAnchors[i].style.display = '';
-      } else {
-        sectionAnchors[i].style.display = 'none';
-      }
-    }
-  }
-
   function setSectionIndex(newSectionIndex) {
     sectionIndex = newSectionIndex;
     if (sectionIndex === 0) {
@@ -44,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
       showArrow(upArrow);
       showArrow(downArrow);
     }
-    showCurrentSectionInHeader();
   }
 
   function hideArrow(arrow) {
