@@ -150,7 +150,7 @@ a:link, a:visited {
   display: none;
 }
 
-.social-media-icon {
+.instagram-icon {
   width: 1.9em;
   height: auto;
 }
@@ -259,6 +259,7 @@ a:link, a:visited {
   width: 100vw;
   height: 20vh;
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
   padding: 0 2em;
 }
 
@@ -272,6 +273,14 @@ a:link, a:visited {
 
 .footer-item {
   padding-right: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icon {
+  width: 2.8em;
+  height: auto;
+  margin-right: 0.5em;
 }
 
 @media (max-width: 800px) {
@@ -415,9 +424,6 @@ a:link, a:visited {
     display: flex;
   }
 
-  .social-media-icon {
-  }
-
   .section2-insta {
     padding: 1em 0 2em 0;
   }
@@ -464,5 +470,28 @@ a:link, a:visited {
 
   .step-image {
     width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: inherit;
+    padding-top: 4em;
+  }
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    flex-direction: column;
+    padding: 1.5em 0;
+  }
+
+  .social-media-icon {
+    margin: 0 0 0.6em 0;
+  }
+
+  .copy {
+    margin: 2em 0;
   }
 }
