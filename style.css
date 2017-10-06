@@ -146,6 +146,10 @@ a:link, a:visited {
   width: 100%;
 }
 
+#who-insta-mobile {
+  display: none;
+}
+
 .social-media-icon {
   width: 1.9em;
   height: auto;
@@ -270,7 +274,7 @@ a:link, a:visited {
   padding-right: 4em;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 800px) {
   .logo-header {
     display: none;
   }
@@ -403,11 +407,38 @@ a:link, a:visited {
     justify-content: flex-start;
   }
 
+  #who-insta-desktop {
+    display: none;
+  }
+
+  #who-insta-mobile {
+    display: flex;
+  }
+
   .social-media-icon {
   }
 
   .section2-insta {
-    padding-left: 0;
+    padding: 1em 0 2em 0;
+  }
+
+  .section2-photogrid {
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .photogrid-row {
+    flex-direction: column;
+  }
+
+  .photo-container {
+    width: 90%;
+  }
+
+  .photo-container span {
+    font-size: 0.8em;
   }
 
   .section-three {
