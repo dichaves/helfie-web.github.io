@@ -3,13 +3,14 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
 }
 
-ul {
+.header-anchor-list {
   display: flex;
   list-style-type: none;
   overflow: hidden;
@@ -20,7 +21,7 @@ ul {
   font-size: 1.2em;
 }
 
-li {
+.header-section-anchor {
   padding-left: 3em;
 }
 
@@ -29,27 +30,55 @@ a:link, a:visited {
   color: inherit;
 }
 
-#header {
+.header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
-  /*height: 10em;*/
-  height: 15%;
+  height: 15vh;
   background-color: rgba(255, 255, 255, 1);
-  /*padding: 0 2em;*/
   box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.46);
+}
+
+.logo-header {
+  width: auto;
+  height: 100%;
+  margin-left: 5em;
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0;
+}
+
+.arrows-container {
+  display: none;
 }
 
 .section-one {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+#section1-iphone {
+  width: auto;
+  height: 80%;
+  margin-right: 2em;
+}
+
+#section1-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10em;
 }
 
 .section-two {
@@ -90,4 +119,75 @@ a:link, a:visited {
 
 .description {
   text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .logo-header {
+    display: none;
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  .header-anchor-list {
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .header-section-anchor {
+    padding-left: 0;
+  }
+
+  .arrows-container {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .arrows {
+    position: relative;
+    height: 2em;
+    width: 4.25em;
+  }
+
+  .arrow {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    background-color: red;
+    cursor: pointer;
+  }
+
+  #up-arrow {
+    left: 0;
+    top: 0;
+  }
+
+  #down-arrow {
+    right: 0;
+    top: 0;
+  }
+
+  .section-one {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
+  }
+
+  #section1-iphone {
+    order: 2;
+    height: auto;
+    width: 90%;
+    margin: 0;
+  }
+
+  #section1-text {
+    order: 1;
+    margin-bottom: 0;
+  }
 }
