@@ -215,7 +215,7 @@ a:link, a:visited {
 .section-three {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   background-color: #FF728F;
 }
@@ -448,6 +448,8 @@ a:link, a:visited {
 
   #app-store-mobile {
     display: flex;
+    justify-content: center;
+    width:100%;
   }
 
   .section2-insta {
