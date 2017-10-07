@@ -5,7 +5,7 @@
 body {
   position: relative;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   scroll-behavior: smooth;
 }
@@ -19,8 +19,7 @@ body {
   list-style-type: none;
   overflow: hidden;
   margin: 0;
-  padding: 0;
-  padding-right: 5em;
+  padding: 0 5em 0 0;
   font-weight: 400;
   font-size: 1.2em;
 }
@@ -40,14 +39,13 @@ a:link, a:visited {
 }
 
 .header {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 15vh;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: white;
   box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.46);
 }
 
@@ -72,10 +70,10 @@ a:link, a:visited {
 .section {
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .section-one {
-  display: flex;
   align-items: flex-end;
   justify-content: center;
   background-color: white;
@@ -91,24 +89,23 @@ a:link, a:visited {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
   width: 40vw;
 }
 
 .headline {
   font-size: 3em;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .subheader {
   font-size: 1.5em;
   color: #FF728F;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
   margin-bottom: 1em;
 }
 
 .section-two {
-  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background-color: white;
@@ -128,17 +125,16 @@ a:link, a:visited {
 .who-title {
   font-size: 2.3em;
   font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .who-description {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
   color: #58595B;
   padding: 1.5em 0;
 }
 
 .who-insta {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   color: #00E086;
   display: flex;
@@ -182,14 +178,11 @@ a:link, a:visited {
 
 .photo-container {
   background-color: #FF93A9;
-  /*height: 32vh;
-  width: 25vh;*/
   margin: 0.7em;
   height: 100%;
   width: 30%;
   text-align: center;
   color: white;
-  font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -206,14 +199,12 @@ a:link, a:visited {
 }
 
 .black-line {
-  /*position: absolute;*/
   background-color: black;
   width: 100vw;
   height: 0.4em;
 }
 
 .section-three {
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
@@ -225,14 +216,13 @@ a:link, a:visited {
   font-size: 2.2em;
   font-weight: 400;
   color: white;
-  padding-top: 1em;
+  padding: 1em 0 0.5em 0;
 }
 
 .steps {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family:'Open Sans', sans-serif;
   font-weight:600;
   color: white;
   width: 100%;
@@ -244,7 +234,11 @@ a:link, a:visited {
   align-items: center;
   flex-direction: column;
   width: 45%;
-  /*padding-bottom: 2em;*/
+}
+
+.app-store img {
+  width: 100%;
+  height: auto;
 }
 
 .description {
@@ -275,7 +269,6 @@ a:link, a:visited {
   color: white;
   width: 100vw;
   height: 20vh;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   padding: 0 2em;
 }
@@ -479,15 +472,18 @@ a:link, a:visited {
     height: inherit;
   }
 
+  .section3-title {
+    padding-top: 2.5em;
+  }
+
   .steps {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-family:'Open Sans', sans-serif;
     font-weight:600;
     color: white;
     width: 100%;
-    padding: 0 5em;
+    padding: 0 5em 3em 5em;
   }
 
   .description {
