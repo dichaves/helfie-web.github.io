@@ -99,7 +99,7 @@ a:link, a:visited {
 }
 
 .subheader {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #FF728F;
   font-weight: 400;
   margin-bottom: 1em;
@@ -129,7 +129,8 @@ a:link, a:visited {
 }
 
 .who-description {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
   color: #58595B;
   padding: 1.5em 0;
 }
@@ -427,6 +428,7 @@ a:link, a:visited {
   .who-description {
     font-size: 0.8em;
     padding: 1em 0;
+    line-height: 1.7em;
   }
 
   .who-insta a {
