@@ -137,10 +137,13 @@ a:link, a:visited {
 .who-insta {
   font-size: 1.5em;
   color: #00E086;
+  width: 100%;
+}
+
+.who-insta a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  width: 100%;
 }
 
 #who-insta-mobile {
@@ -198,6 +201,10 @@ a:link, a:visited {
   font-size: 0.9em;
 }
 
+.section2-name {
+  line-height: 3em;
+}
+
 .black-line {
   background-color: black;
   width: 100vw;
@@ -243,6 +250,7 @@ a:link, a:visited {
 
 .description {
   text-align: center;
+  font-size: 1.1em;
   width: 15vw;
 }
 
@@ -338,24 +346,24 @@ a:link, a:visited {
 
   .arrows {
     position: relative;
-    height: 2em;
-    width: 4.25em;
+    height: 10vw;
+    width: 21vw;
   }
 
   .arrow {
     position: absolute;
-    height: 2em;
-    width: 2em;
+    height: 10vw;
+    width: 10vw;
     background-color: #B3B3B3;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .arrow img {
-    width: 70%;
+    width: 55%;
     height: auto;
-    top: 30%;
-    left: 20%;
-    position: absolute;
   }
 
   #up-arrow {
@@ -421,7 +429,7 @@ a:link, a:visited {
     padding: 1em 0;
   }
 
-  .who-insta {
+  .who-insta a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -432,7 +440,7 @@ a:link, a:visited {
   }
 
   #who-insta-mobile {
-    display: flex;
+    display: block;
   }
 
   #app-store-desktop {
@@ -446,7 +454,7 @@ a:link, a:visited {
   }
 
   .section2-insta {
-    padding: 1em 0 2em 0;
+    padding: 1em 0 1em 0;
   }
 
   .section2-photogrid {
@@ -500,7 +508,6 @@ a:link, a:visited {
     border-radius: 25vw;
     width: 50vw;
     height: 50vw;
-    margin-bottom: 1em;
   }
 
   .app-store {
