@@ -170,13 +170,12 @@ a:link, a:visited {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 
 .photo-container {
   background-color: #FF93A9;
   margin: 0.7em;
-  height: 100%;
   width: 30%;
   text-align: center;
   color: white;
