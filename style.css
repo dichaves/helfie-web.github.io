@@ -6,12 +6,8 @@ body {
   position: relative;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   scroll-behavior: smooth;
-}
-
-.logo-section {
-  display: none;
 }
 
 .header-anchor-list {
@@ -63,10 +59,6 @@ a:link, a:visited {
   padding: 0.5em 0;
 }
 
-.arrows-container {
-  display: none;
-}
-
 .section {
   width: 100vw;
   height: 100vh;
@@ -89,20 +81,21 @@ a:link, a:visited {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 7em;
+  margin-bottom: 3em;
   width: 40vw;
 }
 
 .headline {
   font-size: 3em;
   font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.2em;
 }
 
 .subheader {
   font-size: 1.4em;
   color: #FF728F;
   font-weight: 400;
-  margin-bottom: 1em;
+  margin: 0.3em 0 1em 0;
 }
 
 .section-two {
@@ -132,7 +125,7 @@ a:link, a:visited {
   font-size: 1.1em;
   line-height: 1.5em;
   color: #58595B;
-  padding: 1.5em 0;
+  padding-top: 0.5em;
 }
 
 .who-insta {
@@ -147,7 +140,7 @@ a:link, a:visited {
   justify-content: flex-start;
 }
 
-#who-insta-mobile {
+.show-on-mobile {
   display: none;
 }
 
@@ -241,7 +234,7 @@ a:link, a:visited {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 45%;
+  width: 35%;
 }
 
 .app-store img {
@@ -302,13 +295,10 @@ a:link, a:visited {
   margin-right: 0.5em;
 }
 
-@media (max-width: 800px) {
-  .logo-header {
-    display: none;
-  }
+/* --------------------------------- MOBILE --------------------------------- */
 
+@media (max-width: 800px) {
   .logo-section {
-    display: block;
     padding: 9em 0 2.5em 0;
     width: 40vw;
     height: auto;
@@ -339,7 +329,6 @@ a:link, a:visited {
   }
 
   .arrows-container {
-    display: block;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -388,7 +377,7 @@ a:link, a:visited {
     order: 2;
     height: auto;
     width: 90%;
-    margin: 1.5em 0 0 0;
+    margin: 0;
   }
 
   #section1-text {
@@ -399,12 +388,13 @@ a:link, a:visited {
   }
 
   .headline {
-    font-size: 1.5em;
+    font-size: 2.1em;
   }
 
   .subheader {
-    font-size: 0.8em;
+    font-size: 1.5em;
     margin-top: 1em;
+    font-weight: 300;
   }
 
   .section-two {
@@ -417,18 +407,23 @@ a:link, a:visited {
 
   .section2-text {
     width: 100%;
-    padding-top: 4em;
+    padding-top: 5em;
   }
 
   .who-title {
-    font-size: 1.5em;
+    font-size: 2.4em;
     font-weight: 400;
   }
 
   .who-description {
-    font-size: 0.8em;
+    /*font-size: 0.8em;*/
     padding: 1em 0;
     line-height: 1.7em;
+    font-size: 1.4em;
+  }
+
+  .who-insta {
+    margin-top: 1em;
   }
 
   .who-insta a {
@@ -437,16 +432,20 @@ a:link, a:visited {
     justify-content: flex-start;
   }
 
-  #who-insta-desktop {
+  .instagram-icon {
+    width: 2.5em;
+  }
+
+  .section2-insta {
+    font-size: 1.3em;
+  }
+
+  .show-on-desktop {
     display: none;
   }
 
-  #who-insta-mobile {
+  .show-on-mobile {
     display: block;
-  }
-
-  #app-store-desktop {
-    display: none;
   }
 
   #app-store-mobile {
@@ -468,6 +467,7 @@ a:link, a:visited {
 
   .photogrid-row {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   .photo-container {
@@ -475,7 +475,7 @@ a:link, a:visited {
   }
 
   .photo-container span {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
 
   .section-three {
@@ -504,6 +504,7 @@ a:link, a:visited {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.4em;
   }
 
   .step {
@@ -513,13 +514,14 @@ a:link, a:visited {
   }
 
   .app-store {
-    width: 90%;
+    width: 70%;
   }
 
   .footer {
     flex-direction: column;
     height: inherit;
     padding-top: 4em;
+    font-size: 1.6em;
   }
 
   .footer-list {
@@ -537,5 +539,43 @@ a:link, a:visited {
 
   .copy {
     margin: 2em 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .headline {
+    font-size: 1.6em;
+  }
+
+  .subheader {
+    font-size: 1.1em;
+  }
+
+  .photo-container span {
+    font-size: 0.8em;
+  }
+
+  .who-title {
+    font-size: 1.8em;
+  }
+
+  .who-description {
+    font-size: 1.1em;
+  }
+
+  .instagram-icon {
+    width: 1.9em;
+  }
+
+  .section2-insta {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 1.2em;
+  }
+
+  .footer {
+    font-size: 1.3em;
   }
 }
