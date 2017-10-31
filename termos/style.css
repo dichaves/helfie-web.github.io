@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3E4E8;
+  position: relative;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  line-height: 1.8em;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  font-weight: 400;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 15vh;
+  background-color: white;
+  box-shadow: 0px 3px 9px -4px rgba(0,0,0,0.46);
+}
+
+.logo-header {
+  width: auto;
+  height: 100%;
+  margin-left: 5em;
+}
+
+.header-title {
+  font-weight: 400;
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0;
+}
+
+.terms-text {
+  margin: 8em 10em;
+}
+
+.languages {
+  color: #FF728F;
+  text-align: center;
+}
+
+.language {
+  font-weight: bold;
+}
+
+.language:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #964354;
+  color: white;
+  width: 100vw;
+  height: 20vh;
+  font-size: 1.1em;
+  padding: 0 2em;
+}
+
+.footer-list {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-item {
+  padding-right: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.social-media-icon {
+  width: 2.8em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+/* --------------------------------- MOBILE --------------------------------- */
+
+@media (max-width: 800px) {
+  .header {
+    font-weight: 600;
+    padding: 0 0.5em;
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  .header-title {
+    font-size: 1.5em;
+  }
+
+  .logo-header {
+    margin: 0;
+  }
+
+  .terms-text {
+    margin: 8em 1em;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: inherit;
+    padding-top: 4em;
+    font-size: 1.6em;
+  }
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .footer-item {
+    flex-direction: column;
+    padding: 1.5em 0;
+  }
+
+  .social-media-icon {
+    margin: 0 0 0.6em 0;
+  }
+
+  .copy {
+    margin: 2em 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    font-size: 1.3em;
+  }
+}

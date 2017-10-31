@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Helfie: Desafie seus amigos a comer melhor!</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i|Roboto:500|Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+  <div id="termos">
+    <div class="header">
+      <div class="nav header-content">
+        <h1 class="header-title" v-if="ptbr">Termos e condições de uso</h1>
+        <h1 class="header-title" v-if="en">Terms and conditions of use</h1>
+        <img src="logo.png" class="logo-header">
+      </div>
+    </div>
+
+    <div class="terms-text">
+      <p class="languages"><span class="language" v-on:click="changeToPTBR">PT-BR</span> | <span class="language" v-on:click="changeToEN">EN</span></p>
+      <div v-if="ptbr">
+        <p>Ao se cadastrar no Helfie, você estará concordando com os termos e condições aqui declarados.</p>
+
+        <p><b>I) INTRODUÇÃO</b><br>
+        O aplicativo Helfie é uma ferramenta que estimula a criação de hábitos alimentares saudáveis a partir da competição entre amigos. O usuário pode convidar amigos de sua lista de contatos a participar de desafios, os quais são cumpridos pelo registro por meio de fotos.</p>
+
+        <p><b>II) CADASTRO</b><br>
+        - O cadastro para o primeiro uso em um dispositivo é realizado pelo usuário através do próprio aplicativo, a partir do fornecimento de um número de celular que receberá um SMS com código para o primeiro acesso.<br>
+        - Ao usuário já cadastrado, o Helfie não requer login após o primeiro acesso em um mesmo dispositivo. No caso de acesso por outro dispositivo, o cadastro deve ser feito novamente, sem perda de dados de dispositivos prévios.<br>
+        - Só será permitido realizar um único cadastro por número de celular, assim como um único cadastro por usuário, devendo o acesso, visualização e uso do aplicativo ser feito pelo usuário em caráter pessoal e intransferível.<br>
+        - No caso de menores de 18 anos ou outras pessoas que necessitem de representação na forma da lei, o cadastramento deverá ser realizado com a assistência dos pais ou dos representantes legais.<br>
+        - É proibida a realização de mais de um cadastro por usuário, bem como, o usuário se utilizar do cadastro de outro usuário.</p>
+
+        <p><b>III) INFORMAÇÕES PESSOAIS</b><br>
+        - Ao se cadastrar no aplicativo, o usuário permite o acesso às informações de nome; sobrenome; número de celular.<br>
+        - As informações solicitadas ao usuário no momento do cadastro serão utilizadas pelo Helfie somente para os fins previstos nestes Termos de Uso e em nenhuma circunstância, tais informações serão cedidas ou compartilhadas com terceiros, exceto por ordem judicial ou de autoridade competente.<br>
+        - A única informação que será compartilhada com outros usuários será o nome e sobrenome.</p>
+
+        <p><b>IV) LISTA DE CONTATOS</b><br>
+        - Para a utilização do aplicativo, é fundamental que o usuário conceda ao Helfie acesso à sua lista de contatos, para que ele possa convidar outros usuários a participar de um desafio.</p>
+
+        <p><b>V) CÂMERA</b><br>
+        - Para a utilização do aplicativo, é fundamental que o usuário conceda ao Helfie acesso à câmera do dispositivo, para que ele possa pontuar nos desafios.<br>
+        - O usuário é exclusivamente responsável por todo e qualquer conteúdo por ele enviado através do aplicativo. Ao enviar o conteúdo, o usuário garante que ele não viola quaisquer direitos de terceiros ou leis vigentes e concorda em manter o Helfie isento de quaisquer reclamações judiciais ou extrajudiciais de terceiros.<br>
+        - O Helfie poderá, sem prévio aviso, bloquear o acesso ao aplicativo quando verificar que o usuário praticou algum ato ou mantenha conduta que (i) viole as leis e regulamentos federais, estaduais e/ou municipais, (ii) contrarie as regras destes Termos de Uso, ou (iii) viole os princípios da moral e dos bons costumes.</p>
+
+        <p>Ao prosseguir com a utilização do serviço, se cadastrando no Helfie, você estará concordando com os termos descritos acima.</p>
+      </div>
+      <div v-if="en">
+        ingles
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul class="footer-list">
+        <a href="mailto:contato@helfie.me"><li class="footer-item"><img src="email.png" class="social-media-icon">contato@helfie.me</li></a>
+        <a href="https://www.facebook.com/apphelfie/" target="_blank"><li class="footer-item"><img src="facebook.png" class="social-media-icon">/apphelfie</li></a>
+        <a href="https://www.instagram.com/sixhealthyfriends/" target="_blank"><li class="footer-item"><img src="instagram.png" class="social-media-icon">/sixhealthyfriends</li></a>
+      </ul>
+      <span class="copy">helfie|2017</span>
+    </div>
+  </div>
+  </body>
+
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#termos',
+      data: {
+        language: 'ptbr',
+      },
+      computed: {
+        ptbr: function () {
+          return this.language === 'ptbr'
+        },
+        en: function () {
+          return this.language === 'en'
+        }
+      },
+      methods: {
+        changeToPTBR: function (event) {
+          this.language = 'ptbr'
+        },
+        changeToEN: function (event) {
+          this.language = 'en'
+        }
+      },
+    })
+  </script>
+</html>
