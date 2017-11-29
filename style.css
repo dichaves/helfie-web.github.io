@@ -10,36 +10,6 @@ body {
   scroll-behavior: smooth;
 }
 
-form {
-  width: 35%;
-  display: flex;
-}
-
-input {
-  background-color: white;
-  color: #52D29D;
-  width: 100%;
-  outline: none;
-  margin-right: 0.5em;
-  text-align: center;
-}
-
-button {
-  background-color: #00DF86;
-  color: white;
-}
-
-.email-form {
-  border-radius: 0.5em;
-  font-size: 1.5em;
-  padding: 0.3em 0.5em;
-  border: none;
-}
-
-.email-img {
-  width: 7%;
-}
-
 .header-anchor-list {
   display: flex;
   list-style-type: none;
@@ -95,7 +65,7 @@ a:link, a:visited {
   display: flex;
 }
 
-.section-email {
+.section-four {
   background-color: #F3ECF7;
   flex-direction: column;
   justify-content: center;
@@ -289,7 +259,7 @@ a:link, a:visited {
   height: auto;
 }
 
-.description {
+.step-description {
   text-align: center;
   font-size: 1.1em;
   width: 15vw;
@@ -308,6 +278,36 @@ a:link, a:visited {
 .step-image {
   width: 60%;
   height: auto;
+}
+
+.email-form {
+  width: 35%;
+  display: flex;
+}
+
+.email-form-element {
+  border-radius: 0.5em;
+  font-size: 1.5em;
+  padding: 0.3em 0.5em;
+  border: none;
+}
+
+.form-input {
+  background-color: white;
+  color: #52D29D;
+  width: 100%;
+  outline: none;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+.form-button {
+  background-color: #00DF86;
+  color: white;
+}
+
+.email-img {
+  width: 7%;
 }
 
 .footer {
@@ -543,7 +543,7 @@ a:link, a:visited {
     padding: 0 5em 3em 5em;
   }
 
-  .description {
+  .step-description {
     text-align: center;
     width: 60vw;
     padding: 1.5em 0;
@@ -584,7 +584,7 @@ a:link, a:visited {
     margin: 0 0 0.6em 0;
   }
 
-  .copy {
+  .copyright {
     margin: 2em 0;
   }
 }
@@ -596,24 +596,6 @@ a:link, a:visited {
 
   .subheader {
     font-size: 1.1em;
-  }
-
-  form {
-    width: 95%;
-    flex-direction: column;
-  }
-
-  input {
-    margin-bottom: 1em;
-  }
-
-  .email-img {
-    width: 20%;
-  }
-
-  .email-text {
-    font-size: 1.3em;
-    width: 95%;
   }
 
   .photo-container span {
@@ -636,8 +618,26 @@ a:link, a:visited {
     font-size: 1em;
   }
 
-  .description {
+  .step-description {
     font-size: 1.2em;
+  }
+  
+  .email-form {
+    width: 95%;
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-bottom: 1em;
+  }
+
+  .email-img {
+    width: 20%;
+  }
+
+  .email-text {
+    font-size: 1.3em;
+    width: 95%;
   }
 
   .footer {
