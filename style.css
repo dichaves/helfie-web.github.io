@@ -61,8 +61,9 @@ a:link, a:visited {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  padding-top: 15vh;
 }
 
 .section-four {
@@ -89,7 +90,7 @@ a:link, a:visited {
 
 #section1-iphone {
   width: auto;
-  height: 80%;
+  height: 80vh;
   margin-right: 2em;
 }
 
@@ -129,8 +130,8 @@ a:link, a:visited {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 80%;
   width: 30vw;
+  margin-bottom: 2em;
 }
 
 .who-title {
@@ -234,7 +235,6 @@ a:link, a:visited {
   font-size: 2.2em;
   font-weight: 700;
   color: white;
-  padding: 1em 0 0.5em 0;
 }
 
 .steps {
@@ -346,7 +346,7 @@ a:link, a:visited {
 
 @media (max-width: 800px) {
   .logo-section {
-    padding: 9em 0 2.5em 0;
+    padding: 2em 0 2.5em 0;
     width: 40vw;
     height: auto;
   }
@@ -454,16 +454,14 @@ a:link, a:visited {
 
   .section2-text {
     width: 100%;
-    padding-top: 5em;
+    padding-top: 3em;
   }
 
   .who-title {
     font-size: 2.4em;
-    font-weight: 400;
   }
 
   .who-description {
-    /*font-size: 0.8em;*/
     padding: 1em 0;
     line-height: 1.7em;
     font-size: 1.4em;
@@ -499,6 +497,7 @@ a:link, a:visited {
     display: flex;
     justify-content: center;
     width:100%;
+    padding-top: 5em;
   }
 
   .section2-insta {
@@ -530,7 +529,7 @@ a:link, a:visited {
   }
 
   .section3-title {
-    padding-top: 2.5em;
+    padding-top: 1em;
   }
 
   .steps {
@@ -567,7 +566,7 @@ a:link, a:visited {
   .footer {
     flex-direction: column;
     height: inherit;
-    padding-top: 4em;
+    padding-top: 2em;
     font-size: 1.6em;
   }
 
@@ -621,7 +620,7 @@ a:link, a:visited {
   .step-description {
     font-size: 1.2em;
   }
-  
+
   .email-form {
     width: 95%;
     flex-direction: column;
